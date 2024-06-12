@@ -5,35 +5,76 @@ body {
   }
   
   header {
-    background: lightpink;
-    padding: 2rem;
+    background: rgb(72, 69, 70);
     grid-column: 1 / 4;
+    color: white;
+    text-align:start;
+    font-size: 10px; 
+  }
+
+  h1 {
+    padding: 2rem;
+    margin-bottom: 30px;
+  }
+
+  nav {
+    background-color: black;
+    padding: 2px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   
-  .left-sidebar {
-    background: lightblue;
-    grid-column: 1 / 2;
+  nav ul a:link, a:visited, a:active {
+    text-decoration:none;
+    color: white;
   }
+  
+  nav ul a:visited {
+    color: white;
+    }
   
   main {
-    background: coral;
-    grid-column: 2 / 3;
+    background: rgb(183, 162, 155);
+    grid-column: 1 / 3;
+
+  }
+
+  main p {
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
   }
   
-  .right-sidebar {
-    background: yellow;
+  .aside-content {
+    background: rgb(250, 250, 249);
     grid-column: 3 / 4;
+    font-size: 20px;
+    margin-left: 10px;
   }
   
   footer {
-    background: wheat;
+    background: rgb(72, 69, 70);
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 4;
+    color: white;
+    text-align:start;
+    font-size: 20px;
+    text-align: center; 
   }
   
-  .left-sidebar,
-  .right-sidebar {
+  .aside-content {
     padding: 1rem;
   }
-  
