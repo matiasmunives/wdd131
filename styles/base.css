@@ -58,6 +58,7 @@ body {
     margin-left: 10px;
     font-size: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   h2 {
@@ -152,8 +153,8 @@ body {
 
   footer {
     background: rgb(88, 16, 16);
-    padding-top: 0,7rem;
-    padding-bottom: 0,7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     grid-column: 1 / 4;
     color: white;
     font-size: 15px;
@@ -161,8 +162,8 @@ body {
   }
 
   footer p {
-    padding-top: 0,2rem;
-    padding-bottom: 0,2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
     margin-top: 4px;
     margin-bottom: 4px;
   }
