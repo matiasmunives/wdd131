@@ -128,24 +128,22 @@ body {
         padding-bottom: 3px;
         margin: auto;
       }
-      
-      main {
+
+      .card-1 {
         display: grid;
-        grid-template-columns: 1fr 1f;
+        grid-template-columns: 1fr;
         margin: auto;
       }
-  
-      .card-1 {
-        grid-column: 1 / 2;
-        margin-top: 1px;
+
+      figure {
+        grid-column: 1 / 1;
+
       }
 
       figure img {
-        width: 90%;
+        max-width: 100%;
       }
-
-
-    
+  
       footer {
         font-size: 10px;
       }
@@ -163,11 +161,6 @@ body {
       margin-top: 5px;
       margin-bottom: 5px; 
       text-align: center;
-    }
-  
-    
-    main {
-      font-size: 15px;
     }
   
     nav ul {

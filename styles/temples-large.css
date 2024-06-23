@@ -130,41 +130,11 @@ body {
         margin-top: 1px;
       }
   
-      .card-1, .card-2 {
+      .card-1 {
         font-size: 15px;
         line-height: 20px;
       }
   
-  
-      .card-1-1 p {
-        display: flex;
-        flex-direction:column-reverse;
-        margin-left: 15px;
-        margin-right: 15px;
-        align-content: center;
-        align-items: center;
-      }
-  
-      .card-1-2 p {
-        display: flex;
-        flex-direction:column;
-        margin-left: 15px;
-        margin-right: 15px;
-      }
-  
-      .card-1-1 img {
-        margin: auto;
-        width: 40%;
-        height: 40%;
-      }
-  
-      .card-1-2 img {
-        margin: auto;
-        width: 40%;
-        height: 40%;
-      }
-  
-
       footer {
         font-size: 10px;
       }
