@@ -55,21 +55,25 @@ body {
         font-size: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
+
       }
     
   
       .card-1 {
         border: 1px solid black;
         border-radius: 10px;
-      }
+        display: flex;
+        flex-direction: column;
+          }
 
       figure {
         align-items: center;
-        margin-left: 300px;
-      }
+        margin: auto;
+        margin-top: 15px;
+         }
   
       figcaption {
-        margin-left: 250px;
+        text-align: center;
         font-size: 20px;
         font-style: italic;
         font-family: "Roboto", sans-serif;
