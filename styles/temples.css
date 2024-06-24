@@ -7,15 +7,22 @@ body {
       background-color: rgb(41, 32, 106);
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-  
+      padding-top: 10px;
+      padding-bottom: 10px;  
     }
   
     h1 {
       color: white;
-      text-align: center;
+      text-align: left;
       font-size: 30px;
       grid-column: 1 / 2;
-      margin: auto;
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: bold;
+      font-style: normal;
+      margin-left: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
       }
   
     nav {
@@ -57,13 +64,13 @@ body {
       margin-bottom: 20px;
     }
 
-    main h1 {
+    main h2 {
       color: black;
       margin-bottom: 20px;
       font-size: 40px;
+      text-align: center;
     }
   
-
     .card-1 {
       display: flex;
       flex-direction: row;
@@ -81,9 +88,6 @@ body {
       font-style: italic;
       font-family: "Roboto", sans-serif;
     }
-
-  
-    
 
     footer {
       background-color: rgb(41, 32, 106); 
@@ -178,14 +182,14 @@ body {
       margin: auto;
     }
   
-      .card-1{
-        display: flex;
-        flex-direction: row;
-        font-size: 15px;
-        line-height: 20px;
-      }
-
+    .card-1{
+      display: flex;
+      flex-direction: row;
+      font-size: 15px;
+      line-height: 20px;
     }
+
+  }
     
     @media (min-width: 768px) and (max-width: 1200px) {
     
@@ -202,50 +206,12 @@ body {
         margin: auto;
         }  
     
-        .card-1 {
-          display: flex;
-          flex-direction: column;
-          margin-top: 1px;
-        }
-    
-        .card-1, .card-2 {
-          font-size: 20px;
-          line-height: 20px;
-        }
-    
-    
-        .card-1-1 p {
-          display: flex;
-          flex-direction:column-reverse;
-          margin-left: 15px;
-          margin-right: 15px;
-          align-content: center;
-          align-items: center;
-        }
-    
-        .card-1-2 p {
-          display: flex;
-          flex-direction:column;
-          margin-left: 15px;
-          margin-right: 15px;
-        }
-    
-        .card-1-1 img {
-          margin: auto;
-          width: 30%;
-          height: 30%;
-        }
-    
-        .card-1-2 img {
-          margin: auto;
-          width: 30%;
-          height: 30%;
-        }
-        
-        .card-2-1 {
-        width: 250px;
-        margin: auto;
+      .card-1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1px;
         font-size: 20px;
+        line-height: 20px;
       }
-    
+      
     }
