@@ -1,94 +1,241 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@media (max-width: 600px) {
-    body {
-      max-width: 100%;
+@media (min-width: 740px) {
+    
+body {
+    max-width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    header {
+      background-color: rgb(41, 32, 106);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-top: 10px;
+      padding-bottom: 10px;  
     }
   
-    header {
+    h1 {
+      color: white;
+      text-align: left;
+      font-size: 30px;
+      grid-column: 1 / 2;
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: bold;
+      font-style: normal;
+      margin-left: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
+      }
+
+    .navigation {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+
+    }  
+
+    .navigation a {
+      display: inline;
       margin-top: 5px;
       margin-bottom: 5px; 
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 15px;
-    }
-
-    nav ul {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: space-evenly;
-      padding-inline-start: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      list-style: none;
+      color: white;
+     }
+  
+    nav {
+      background-color: rgb(41, 32, 106);
+      grid-column: 3 / 5 ;
     }
   
     nav ul li {
-      font-size: 15px;
-      padding-top: 3px;
-      padding-bottom: 3px;
+      font-weight: bold;
+      text-decoration: none;
       margin: auto;
+     }
+    
+   nav ul a:link, a:visited, a:active {
+      text-decoration:none;
+      color: white;
+    }
+  
+    nav ul a:visited {
+      color: white;
+    }
+    
+    nav ul a:hover {
+      border-bottom-style:solid ;
+      border-bottom-width: 3px;
+      border-bottom-color: white;
+      }
+
+    #menu {
+        display: none; /* hide hamburger button */
+      }
+    
+    main {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
+    main h2 {
+      color: black;
+      margin-bottom: 20px;
+      font-size: 40px;
+      text-align: center;
+    }
+  
     .card-1 {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin: auto;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      border-radius: 10px;
     }
 
-    figure {
-      grid-column: 1 / 1;
-
+    .card-1 img:hover {
+      box-shadow: 3px 3px 10px rgb(11, 11, 11);
     }
 
-    figure img {
-      max-width: 100%;
+    figcaption {
+      text-align: center;
+      font-size: 15px;
+      font-style: italic;
+      font-family: "Roboto", sans-serif;
     }
 
     footer {
-      font-size: 10px;
+      background-color: rgb(41, 32, 106); 
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      grid-column: 1 / 4;
+      color: white;
+      font-size: 15px;
+      text-align: center; 
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
 
-  @media (min-width: 600px) and (max-width: 768px) {
+    @media (min-width: 1040px) {
     
-    body {
-      max-width: 100%;
+    body{
+    max-width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     }
-
+    
     header {
-      display: flex;
-      flex-direction: column;
-      margin-top: 5px;
-      margin-bottom: 5px; 
-      text-align: center;
+      background-color: rgb(41, 32, 106);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-top: 10px;
+      padding-bottom: 10px;  
+    }
+  
+    h1 {
+      color: white;
+      text-align: left;
+      font-size: 30px;
+      grid-column: 1 / 2;
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: bold;
+      font-style: normal;
+      margin-left: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
+      }
+  
+    nav {
+      background-color: rgb(41, 32, 106);
+      grid-column: 3 / 5 ;
     }
   
     nav ul {
+      list-style: none;
       display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: space-evenly;
-      padding-inline-start: 5px;
+      flex-direction: row;
+      color: white;
     }
   
     nav ul li {
-      font-size: 15px;
-      padding-top: 3px;
-      padding-bottom: 3px;
+      font-weight: bold;
+      font-size: 20px;
+      text-decoration: none;
       margin: auto;
+     }
+    
+    nav ul a:link, a:visited, a:active {
+      text-decoration:none;
+      color: white;
     }
   
-    .card-1{
-      display: flex;
-      flex-direction: row;
-      font-size: 15px;
-      line-height: 20px;
+    nav ul a:visited {
+      color: white;
+    }
+    
+    nav ul a:hover {
+      border-bottom-style:solid ;
+      border-bottom-width: 3px;
+      border-bottom-color: white;
+      }
+
+      #menu {
+        display: none; /* hide hamburger button */
+      }
+    
+    main {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
-  }
+    main h2 {
+      color: black;
+      margin-bottom: 20px;
+      font-size: 40px;
+      text-align: center;
+    }
   
+    .card-1 {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid black;
+      border-radius: 10px;
+      flex-wrap: wrap;
+      align-content: space-between;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .card-1 img:hover {
+      box-shadow: 3px 3px 10px rgb(11, 11, 11);
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: 15px;
+      font-style: italic;
+      font-family: "Roboto", sans-serif;
+    }
+
+    footer {
+      background-color: rgb(41, 32, 106); 
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      grid-column: 1 / 4;
+      color: white;
+      font-size: 15px;
+      text-align: center; 
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
