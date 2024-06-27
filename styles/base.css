@@ -99,6 +99,7 @@ body {
   }
 
   .card-1-1 img {
+    display: block;
     width: 20%;
     height: 20%;
     margin: auto;
@@ -159,16 +160,19 @@ body {
     color: black;
   }
 
+  .card-2-1 a:hover {
+    text-decoration:underline;
+  }
+
   footer {
     background: rgb(88, 16, 16);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     grid-column: 1 / 4;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center; 
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: auto;
   }
 
   @media (max-width: 600px) {
