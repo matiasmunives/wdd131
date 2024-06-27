@@ -117,8 +117,8 @@ body {
   }
 
   .card-1-2 img {
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 60%;
     margin: auto;
     margin-right: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -178,7 +178,7 @@ body {
     }
 
     h1 {
-      font-size: 15px;
+      font-size: 16px;
     }
 
     nav ul {
@@ -187,13 +187,13 @@ body {
       flex-wrap: nowrap;
       justify-content: space-evenly;
       padding-inline-start: 5px;
+      margin: auto;
     }
   
     nav ul li {
       font-size: 15px;
       padding-top: 3px;
       padding-bottom: 3px;
-      margin: auto;
     }
     
     main {
@@ -209,8 +209,12 @@ body {
       margin-top: 1px;
     }
 
+    .card-1 img {
+        margin-top: 1px;
+    }
+
     .card-1, .card-2 {
-      font-size: 15px;
+      font-size: 18px;
       line-height: 20px;
     }
 
@@ -244,7 +248,7 @@ body {
     }
 
     .card-2 ul li {
-      font-size: 15px;
+      font-size: 18px;
     }
 
     .card-2 {
@@ -252,7 +256,7 @@ body {
     }
 
     footer {
-      font-size: 10px;
+      font-size: 13px;
     }
   }
   
@@ -263,15 +267,15 @@ body {
   }
 
   h1 {
-    font-size: 15px;
+    font-size: 20px;
   }
-  
+ 
   main {
-    font-size: 15px;
+    font-size: 1px;
   }
 
   nav ul li{
-    font-size: 15px;
+    font-size: 16px;
     margin: auto;
     }  
 
