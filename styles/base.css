@@ -34,7 +34,7 @@ body {
     margin: auto;
   }
   
-  nav ul a:link, a:visited, a:active {
+  nav ul a:link {
     text-decoration:none;
     color: white;
   }
@@ -48,6 +48,11 @@ body {
     border-bottom-width: 3px;
     border-bottom-color: white;
     }
+
+  nav ul a:active {
+    text-decoration:none;
+    color: white;
+  }
 
   main {
     display: grid;
