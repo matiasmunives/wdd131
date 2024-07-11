@@ -1,0 +1,243 @@
+@media (min-width: 740px) {
+    
+body {
+    max-width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    header {
+      background-color: rgb(41, 32, 106);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-top: 10px;
+      padding-bottom: 10px;  
+    }
+  
+    h1 {
+      color: white;
+      text-align: left;
+      font-size: 30px;
+      grid-column: 1 / 2;
+      font-family: "Nunito", sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      margin-left: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
+      }
+
+    .navigation {
+      display: flex;
+      flex-direction: row;
+
+    }  
+
+    .navigation a {
+      display: inline;
+      margin-top: 5px;
+      margin-bottom: 5px; 
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      list-style: none;
+      color: white;
+     }
+  
+    nav {
+      background-color: rgb(41, 32, 106);
+      grid-column: 3 / 5 ;
+    }
+  
+    nav ul li {
+      font-weight: bold;
+      text-decoration: none;
+      margin: auto;
+     }
+    
+   nav ul a:link, a:visited, a:active {
+      text-decoration:none;
+      color: white;
+    }
+  
+    nav ul a:visited {
+      color: white;
+    }
+    
+    nav ul a:hover {
+      border-bottom-style:solid ;
+      border-bottom-width: 3px;
+      border-bottom-color: white;
+      }
+
+    #menu {
+        display: none; /* hide hamburger button */
+      }
+    
+    main {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    main h2 {
+      color: black;
+      margin-bottom: 20px;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: space-between;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .card img {
+      margin-bottom: 10px;
+    }
+  
+    section {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card-1 p {
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: rgb(41, 32, 106); 
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      grid-column: 1 / 4;
+      color: white;
+      font-size: 15px;
+      text-align: center; 
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+    @media (min-width: 1040px) {
+    
+    body{
+    max-width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    header {
+      background-color: rgb(41, 32, 106);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-top: 10px;
+      padding-bottom: 10px;  
+    }
+  
+    h1 {
+      color: white;
+      text-align: left;
+      font-size: 30px;
+      grid-column: 1 / 2;
+      font-family: "Nunito", sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      margin-left: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
+      }
+  
+    nav {
+      background-color: rgb(41, 32, 106);
+      grid-column: 3 / 5 ;
+    }
+  
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      color: white;
+    }
+  
+    nav ul li {
+      font-weight: bold;
+      font-size: 20px;
+      text-decoration: none;
+      margin: auto;
+     }
+    
+    nav ul a:link, a:visited, a:active {
+      text-decoration:none;
+      color: white;
+    }
+  
+    nav ul a:visited {
+      color: white;
+    }
+    
+    nav ul a:hover {
+      border-bottom-style:solid ;
+      border-bottom-width: 3px;
+      border-bottom-color: white;
+      }
+
+      #menu {
+        display: none; /* hide hamburger button */
+      }
+    
+    main {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    main h2 {
+      color: black;
+      margin-top: 10PX;
+      margin-bottom: 10px;
+      font-size: 50px;
+      text-align: center;
+    }
+  
+    .section {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid black;
+      border-radius: 10px;
+      flex-wrap: wrap;
+      align-content: space-between;
+      align-items: flex-start;
+      justify-content: space-between;
+
+    }
+
+    footer {
+      background-color: rgb(41, 32, 106); 
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      grid-column: 1 / 4;
+      color: white;
+      font-size: 15px;
+      text-align: center; 
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
