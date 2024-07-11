@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Matías F. Munives">
+    <meta name="author" content="Matías Munives">
+    <title>WDD 131 - Dynamic Web Fundamentals - Matías Munives</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-responsive.css">
+    <script src="scripts/place.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <header>
+        <h1>MENDOZA | ARGENTINA</h1>
+    </header>
+      
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/mendoza.webp" media="(min-width: 1000px)" width="1248" height="700">
+                <img src="images/mendoza-small.webp" alt="Mendoza, Argentina" width="480" height="640">
+            </picture>
+        </div>
+
+        <section class="data">
+        <h2>Data</h2>
+            <h3>Area: </h3><p><span>148,827 km²</span></p>
+            <h3>Population: </h3><p><span>2,014,533 (2022 census)</span></p>
+            <h3>Capital: </h3><p><span>Mendoza Capital</span></p>
+            <h3>Languages: </h3><p><span>Spanish</span></h3>
+            <h3>Currency: </h3><p><span>Argentine Peso (ARS)</span></h3>
+            <h3>Time Zone: </h3><p><span>GMT-3</span></h3>
+            <h3>Calling Code: </h3><p><span>+54</span></h3>
+            <h3>Internet TLD: </h3><p><span>.ar</span></h3>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon"></div>
+            <img class="icon" src="images/wheater_icon.svg" alt="weather icon" width="100" height="100" >
+            </div>
+
+            <h3>Temperature: </h3><p><span id="temperature"></span> </p>
+            <h3>Conditions: </h3><p><span id="condition"></span> </p>
+            <h3>Wind: </h3><p><span id="windSpeed"></span> </p>
+            <h3>Wind Chill: </h3><p><span id="windChill"></span> </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="copyright">&copy;<span id="year"></span> Matías Fernando Munives - Argentina</p>
+        <p>Last Modification: <span id="last-updated"></span></p>
+    </footer>
+
+</body>
+</html>
