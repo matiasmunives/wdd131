@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>Product Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Product Review Form">
+    <meta name="author" content="Matías Munives">
+    <link type="text/css" rel="stylesheet" href="styles/product-form.css" />
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="reviewForm">
+            <fieldset>
+                <label class="title-1"> Product Name: *</label><br>
+                <select id="productList" name="products" required><label></label></select>
+                <option value="" disabled selected>Select a Product: </option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <label class="title-1" for="rating">Overall Rating</label>
+                <div class="rating">
+                    <input type="radio" name="rating" id="rating-1" value="1">
+                    <label for="rating-1">&#9733;&#9734;&#9734;&#9734;&#9734;</label>
+                    
+                    <input type="radio" name="rating" id="rating-2" value="2">
+                    <label for="rating-2">&#9733;&#9733;&#9734;&#9734;&#9734;</label>
+                    
+                    <input type="radio" name="rating" id="rating-3" value="3">
+                    <label for="rating-3">&#9733;&#9733;&#9733;&#9734;&#9734;</label>
+                    
+                    <input type="radio" name="rating" id="rating-4" value="4">
+                    <label for="rating-4">&#9733;&#9733;&#9733;&#9733;&#9734;</label>
+                    
+                    <input type="radio" name="rating" id="rating-5" value="5">
+                    <label for="rating-5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="date" class="title-1">Date of Installation</label>
+                <br>
+                <input type="date" name="date" id="date" required>
+            </fieldset>
+
+            <fieldset>
+                <label class="title-1" for="features">Which features did you find useful in the product?<br>
+                <span class="title-2">(check all that apply)</span></label>
+                <div class="checkbox">
+                    <input class="check" type="checkbox" id="durability" name="feature" value="durability">
+                    <label for="durability">Durability</label><br>
+
+                    <input class="check" type="checkbox" id="ease-of-use" name="feature" value="ease-of-use" checked>
+                    <label for="ease-of-use">Ease of Use</label><br>
+
+                    <input class="check" type="checkbox" id="performance" name="feature" value="performance">
+                    <label for="performance">Performance</label><br>
+
+                    <input class="check" type="checkbox" id="design" name="feature" value="design">
+                    <label for="design">Design</label><br>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="review" class="title-1">Written Review <span class="optional">(Optional)</span></label><br>
+                <textarea id="review" name="review"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="name" class="title-1">Your Name <span class="optional">(Optional)</span></label><br>
+                <input type="text" id="name" name="name">
+            </fieldset>
+
+            <input class="button" type="submit" value="Post Review">
+            
+        </form>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy;<span id="year"></span> Matías Fernando Munives - Argentina</p>
+        <p>Last Modification: <span id="last-updated"></span></p>
+    </footer>
+
+  </body>
+</html>
