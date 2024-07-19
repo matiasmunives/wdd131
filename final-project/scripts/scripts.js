@@ -17,28 +17,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     lastUpdatedElement.innerText = `${formattedDate} ${formattedTime}`;
   });
 
-//Calculate windChill
-const temp = document.querySelector("#temperature");
-const cond = document.querySelector("#condition");
-const wind = document.querySelector("#windSpeed");
-const windchill = document.querySelector("#windChill");
+//Hamburguer - Menu 
+// Store the selected elements that we are going to use. 
+const hamButton = document.querySelector('#menu');
+const menu = document.querySelector('.navigation');
 
-const temperature = 5;
-const condition = "Cold";
-const windSpeed = 6;
+hamButton.addEventListener('click', function() {
+	menu.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
 
-function calculateWindChild(temperature, windSpeed) {
-    return (13.12 + (0.6215 * temperature) - (11.37 * Math.pow(windSpeed, 0.16))
-     + (0.3965 * temperature) * Math.pow(windSpeed, 0.16)).toFixed(2);
-}
 
-temp.textContent = temperature;
-cond.textContent = condition;
-wind.textContent = windSpeed;
-
-if (temperature <= 10 && windSpeed > 4.8) {
-    windchill.textContent = `${calculateWindChild(temperature, windSpeed)} km/h`;
-}
-else {
-    windchill.textContent = "N/A";
-}

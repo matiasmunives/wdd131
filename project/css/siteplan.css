@@ -166,153 +166,152 @@ footer {
     letter-spacing: 1px;
   }
 
-  @media (max-width: 600px) {
-    body {
-      max-width: 100%;
-      margin: 10px;
-    }
-  
-    header {
+@media (max-width: 600px) {
+  body {
+    max-width: 100%;
+    margin: 10px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    font-size: 10px;
+    line-height: 30px;
+  }
+
+  main {
       display: flex;
       flex-direction: column;
       align-items: center;
-      align-content: center;
-      padding: 0px;
+      margin: auto;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
+  h2, h4 {
+  width: 100%;
+  margin-bottom: 4px;
+  }
+
+
+  p {
+      text-align: justify;
       margin-top: 5px;
-      margin-bottom: 5px; 
-      font-size: 10px;
-      line-height: 30px;
-    }
+      margin-bottom: 5px;
+      font-size: 15px;
+  }
 
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        text-align: center;
-      }
-
-    h2, h4, h4 {
-        width: 100%;
-        margin-top: 4x;
-        margin-bottom: 4px;
-    }
-
-  
-    p {
-        text-align: justify;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        font-size: 15px;
-    }
-
-    img {
-        max-width: 60%;
-        max-height: 60%;
-      
-      }
-
-    .colors {
-    width: 70%;
-    min-width: 250px;
-    font-size: 11px;
-    }
-    .colors th {
-    height: 2em;
-    width: 20%;
-    }
+  img {
+      max-width: 60%;
+      max-height: 60%;
     
-    .colors td {
-    width: 20%;
-    height: 3em;
     }
 
-    .p-example {
-        margin: auto;
-        text-align: justify;
-        padding: 0;
-    }
-    
-    p.colored {
-        margin: auto;
-        text-align: justify;
-        padding: 10px;
-        }
-
-    .mobile-wireframes, .desktop-wireframes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-    }
-
-    .desktop-wireframes img {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        max-width: 60%;
-        max-height: 60%;
-    }
-
-    .mobile-wireframes img {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        max-width: 60%;
-        max-height: 60%;
-    }
-
-
-    footer {
-        margin: auto;
-    }
-
-    footer p {
-        text-align: center;
-        line-height: 10px;
-        font-size: 9px;
-    }  
-  
+  .colors {
+  width: 70%;
+  min-width: 250px;
+  font-size: 11px;
+  }
+  .colors th {
+  height: 2em;
+  width: 20%;
   }
   
-  @media (min-width: 600px) and (max-width: 768px) {
+  .colors td {
+  width: 20%;
+  height: 3em;
+  }
+
+  .p-example {
+      margin: auto;
+      text-align: justify;
+      padding: 0;
+  }
   
-    body {
-      max-width: 100%;
-      margin-right: 15px;
-      margin-left: 15px;
+  p.colored {
+      margin: auto;
+      text-align: justify;
+      padding: 10px;
+      }
+
+  .mobile-wireframes, .desktop-wireframes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+  }
+
+  .desktop-wireframes img {
+      margin-top: 15px;
       margin-bottom: 15px;
-      border-radius: 5px;
-    }
+      max-width: 60%;
+      max-height: 60%;
+  }
 
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-  
+  .mobile-wireframes img {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      max-width: 60%;
+      max-height: 60%;
+  }
+
+
+  footer {
+      margin: auto;
+  }
+
+  footer p {
+      text-align: center;
+      line-height: 10px;
+      font-size: 9px;
+  }  
+
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+  body {
+    max-width: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  main {
+      display: flex;
+      flex-direction: column;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  body {
+    max-width: 100%;
+  }
+
+  main {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .desktop-wireframes img {
+      max-width: 30%;
+      max-height: 30%;
+  }
+
+  .mobile-wireframes img {
+      max-width: 20%;
+      max-height: 20%;
   }
   
-  @media (min-width: 768px) and (max-width: 1200px) {
-  
-    body {
-      max-width: 100%;
-    }
 
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .desktop-wireframes img {
-        max-width: 30%;
-        max-height: 30%;
-    }
-
-    .mobile-wireframes img {
-        max-width: 20%;
-        max-height: 20%;
-    }
-    
-  
-  }
+}
