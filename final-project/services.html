@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Final Project">
     <meta name="author" content="Matías Munives">
-    <link type="text/css" rel="stylesheet" href="styles/styles.css">
-    <link type="text/css" rel="stylesheet" href="styles/styles-large.css">
+    <link rel="preload" href="styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/styles.css"></noscript>
+    <link rel="preload" href="styles/styles-large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/styles-large.css"></noscript>
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/services.js" defer></script>
 
@@ -49,8 +51,8 @@
 
   <footer>
     <div class="footer">
-    <p class="copyright">&copy;<span id="year"></span> Matías Fernando Munives | Argentina |
-      <a href="https://matiasmunives.github.io/wdd131//project/siteplan.html">Site Plan</a>
+      <p class="copyright">&copy;<span id="year"></span> | Matías F. Munives | Argentina<br>
+        <a href="https://matiasmunives.github.io/wdd131//project/siteplan.html">Site Plan</a>
       <a href="sources.html">| Sources</a>
     </p>
     <p>Last Modification: <span id="last-updated"></span></p>

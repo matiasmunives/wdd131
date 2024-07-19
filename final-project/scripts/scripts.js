@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const lastModified = new Date(document.lastModified);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     const formattedDate = lastModified.toLocaleDateString('en-US', options);
-    const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    const timeOptions = { hour: '2-digit', minute: '2-digit'};
     const formattedTime = lastModified.toLocaleTimeString('en-US', timeOptions);
     lastUpdatedElement.innerText = `${formattedDate} ${formattedTime}`;
   });
@@ -26,5 +26,4 @@ hamButton.addEventListener('click', function() {
 	menu.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
-
 

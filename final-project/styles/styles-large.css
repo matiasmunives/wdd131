@@ -157,13 +157,14 @@ p {
     margin-bottom: 20px;
 }
 
-   /*
+/*
 ========================================
 Form
 ========================================
 */
 
 .formContainer {
+    margin: auto;
     font-size: 18px;
   }
   
@@ -181,7 +182,7 @@ Form
   }
 
   .contactForm button[type="submit"] {
-    margin-left: 95px; 
+    margin-left: 80px; 
   }
 
   /*
@@ -218,6 +219,8 @@ Footer
 
 .footer p {
     font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 }
@@ -301,17 +304,6 @@ nav {
     grid-row: 2 / 6;
     background-color: var(--accent2-color);
     color: var(--paragraph-color-on-color);
-}
-
-.home-paragraph-2 ul {
-    margin-bottom: 1px;
-}
-
-.home-paragraph-2 li {
-    line-height: 30px;
-    font-size: 16px;
-    font-weight: normal;
-    margin-bottom: 5px;
 }
 
 .home-left-img {
@@ -512,6 +504,7 @@ Card Services
   width: 100%;
   height: auto;
   display: block;
+  aspect-ratio: 5 / 3;
 }
 
 .card h3 {
@@ -562,6 +555,14 @@ Sources List
 .styled-list a:visited {
     color: black; 
 }
+
+hr {
+    height: 1px;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--accent1-color);
+  }
 
 /*
 ========================================

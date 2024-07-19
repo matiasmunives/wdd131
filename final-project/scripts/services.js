@@ -73,6 +73,10 @@ createServiceCard(services);
 
 function createServiceCard(servicesList) {
   document.querySelector(".card").innerHTML = "";
+
+  const initialViewportHeight = window.innerHeight;
+
+
   servicesList.forEach(service => {
     let card = document.createElement("section");
     card.classList.add(`card-${1}`);
@@ -84,7 +88,11 @@ function createServiceCard(servicesList) {
     img.setAttribute("src", service.imageUrl);
     img.setAttribute("alt", `${service.serviceName} Service`);
     img.style.aspectRatio = "5 / 3";
-    img.setAttribute("loading", "lazy");
+
+    if (card.getBoundingClientRect().top > initialViewportHeight) {
+      img.setAttribute("loading", "lazy");
+    }
+
     description.innerHTML = `${service.description}`;
 
     card.appendChild(serviceName);
